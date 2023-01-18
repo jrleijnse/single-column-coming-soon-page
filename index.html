@@ -24,18 +24,35 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header>
+    <header class="header">
       <a href="#">
-        <img src="/images/logo.svg" alt="PING logo" />
+        <img class="logo" src="/images/logo.svg" alt="PING logo" />
       </a>
     </header>
 
     <main>
-      We are launching soon! Subscribe and get notified Notify Me &copy;
-      Copyright Ping. All rights reserved.
+      <div class="single-column-container">
+        <h1 class="title">We are launching <span class="soon">soon!</span></h1>
+        <h2 class="subtitle">Subscribe and get notified</h2>
+        <div class="notify">
+          <input class="input" />
+          <button class="btn">Notify Me</button>
+        </div>
+        <img
+          class="table-img"
+          src="/images/illustration-dashboard.png"
+          alt="Tables and charts"
+        />
+      </div>
     </main>
 
-    <footer>
+    <footer class="footer">
+      <ul class="social-links">
+        <a><img /></a>
+        <a><img /></a>
+        <a><img /></a>
+      </ul>
+      <p>&copy; Copyright Ping. All rights reserved.</p>
       <p class="attribution">
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
