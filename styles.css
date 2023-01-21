@@ -5,13 +5,12 @@
 }
 
 html {
-  font-size: 10px;
+  font-size: 9px;
 }
 
 body {
   font-family: "Libre Franklin", sans-serif;
   font-weight: 300;
-  font-size: 2rem;
 }
 
 .single-column-container {
@@ -23,46 +22,132 @@ body {
 }
 
 .header {
+  font-size: 4rem;
   display: flex;
   justify-content: center;
-  margin: 6rem 0;
+  margin: 6rem 0 4.2rem 0;
 }
 
 .title {
+  font-size: 5rem;
   font-weight: 300;
-  margin-bottom: 1.2rem;
+  margin-bottom: 1rem;
+  color: hsl(0, 0%, 59%);
+  margin-bottom: 2rem;
 }
 
 .soon {
   font-weight: 700;
+  color: hsl(209, 33%, 12%);
 }
 
 .subtitle {
+  font-size: 5rem;
+  letter-spacing: -0.5px;
   font-weight: 300;
-  margin-bottom: 2.2rem;
+  margin-bottom: 3.2rem;
   font-size: 2rem;
+  color: hsl(209, 33%, 12%);
+}
+
+.notify-container {
+  text-decoration: none;
+  height: 4rem;
+  display: flex;
+  column-gap: 2rem;
 }
 
 .input {
-  width: 36rem;
+  font-family: inherit;
+  font-size: 1.6rem;
+  width: 43rem;
+  border-radius: 3rem;
+  border: 1px solid hsl(223, 100%, 88%);
+  padding: 2.5rem;
+}
+
+.input::placeholder {
+  color: hsl(223, 100%, 88%);
+  letter-spacing: 0.5px;
+}
+
+*:focus {
+  outline: 1px solid hsl(354, 100%, 66%);
+  border: 1px solid #fff;
 }
 
 .btn {
-  width: 12rem;
+  font-family: inherit;
+  text-decoration: none;
+  border: none;
+  background-color: hsl(223, 87%, 63%);
+  color: #fff;
+  /* font-weight: 600; */
+  font-size: 1.6rem;
+  letter-spacing: 0.5px;
+  width: 18rem;
+  border-radius: 3rem;
+  height: 5.2rem;
+  transition: all 0.3s;
+
+  box-shadow: 0 2.4rem 4.8rem rgb(0 0 0 / 8%);
+}
+
+.btn:hover,
+.btn:active {
+  background-color: hsl(223, 100%, 88%);
+  cursor: pointer;
+}
+
+.btn:focus {
+  outline: 1px solid hsl(354, 100%, 66%);
 }
 
 .table-img {
-  width: 50rem;
-  margin: 7rem;
+  width: 64rem;
+  margin: 8rem;
 }
 
 .footer {
   text-align: center;
+  margin-bottom: 2rem;
+}
+
+.social-links {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  column-gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+ion-icon {
+  font-size: 2rem;
+  color: hsl(223, 87%, 63%);
+  padding: 0.8rem;
+  border-radius: 100px;
+  border: 1px solid hsl(0, 0%, 85%);
+  transition: all 0.3s;
+}
+
+ion-icon:hover,
+ion-icon:active {
+  cursor: pointer;
+  fill: #fff;
+  background-color: hsl(223, 87%, 63%);
+}
+
+.copyright {
+  color: hsl(0, 0%, 59%);
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
 }
 
 .attribution {
-  font-size: 11px;
+  font-size: 1.4rem;
   text-align: center;
+  margin-bottom: 2rem;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
