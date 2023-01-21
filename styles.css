@@ -47,8 +47,8 @@ body {
 
 .subtitle {
   font-size: 5rem;
+  font-weight: inherit;
   letter-spacing: -0.5px;
-  font-weight: 300;
   margin-bottom: 3.2rem;
   font-size: 2rem;
   color: hsl(209, 33%, 12%);
