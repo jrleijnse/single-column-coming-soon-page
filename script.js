@@ -16,17 +16,17 @@ const submitEmail = submitEmailBtn.addEventListener("click", function (e) {
     error.textContent = "Please provide a valid email address";
   }
 
-  // Mobile
-  if (mobile.matches) {
-    error.classList.add("error-mobile");
-    notifyContainer.classList.add("mb");
-  }
-
   if (
     !inputEmail.value === "" ||
     (inputEmail.value.includes("@") && inputEmail.value.length >= 1)
   ) {
     notifyContainer.submit();
+  }
+
+  // Mobile
+  if (mobile.matches) {
+    error.classList.add("error-mobile");
+    notifyContainer.classList.add("mb");
   }
 
   inputEmail.focus();
