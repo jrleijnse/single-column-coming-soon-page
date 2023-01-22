@@ -19,12 +19,11 @@
   }
 
   .notify-container {
-    position: none;
     display: flex;
     flex-direction: column;
     height: 100%;
     margin-bottom: 12rem;
-    row-gap: 2rem;
+    gap: 1rem;
   }
 
   .input {
@@ -35,10 +34,10 @@
   }
 
   .error {
+    content: "";
     text-align: center;
     width: 55rem;
     font-size: 1.9rem;
-    margin: -1rem 0 2.2rem 0;
     position: static;
   }
 
@@ -64,4 +63,15 @@
   ion-icon {
     font-size: 3rem;
   }
+}
+
+/* HELPER CLASSES */
+
+.error-mobile {
+  position: static;
+  margin-bottom: 2rem;
+}
+
+.mb {
+  margin-bottom: 7.8rem;
 }
