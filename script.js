@@ -21,12 +21,14 @@ const submitEmail = submitEmailBtn.addEventListener("click", function (e) {
     (inputEmail.value.includes("@") && inputEmail.value.length >= 1)
   ) {
     notifyContainer.submit();
+    return;
   }
 
   // Mobile
   if (mobile.matches) {
     error.classList.add("error-mobile");
-    notifyContainer.classList.add("mb");
+    error.classList.add("mb");
+    submitEmailBtn.classList.add("mt");
   }
 
   inputEmail.focus();
