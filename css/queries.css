@@ -1,0 +1,59 @@
+@media (max-width: 375px) {
+  html {
+    font-size: 5px;
+  }
+
+  .logo {
+    height: 3rem;
+    margin: 9rem 0 2rem 0;
+  }
+
+  .title {
+    margin-bottom: 3rem;
+    font-size: 4.5rem;
+  }
+
+  .subtitle {
+    font-size: 2.5rem;
+    margin-bottom: 6rem;
+  }
+
+  .notify-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    row-gap: 2rem;
+    height: 100%;
+    margin-bottom: 3rem;
+  }
+
+  .input {
+    font-size: 2.3rem;
+    width: 55rem;
+    height: 7rem;
+    padding-left: 5rem;
+  }
+
+  .btn {
+    font-size: 2.3rem;
+    width: 55rem;
+    height: 7rem;
+  }
+
+  .table-img {
+    margin-bottom: 15rem;
+  }
+
+  .social-links {
+    column-gap: 3rem;
+  }
+
+  .copyright {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  ion-icon {
+    font-size: 4rem;
+  }
+}
