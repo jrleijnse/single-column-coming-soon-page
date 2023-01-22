@@ -72,6 +72,8 @@ body {
 }
 
 .error {
+  font-size: 1.4rem;
+  font-style: italic;
   color: hsl(354, 100%, 66%);
   content: "Please provide a valid email address";
   position: absolute;
