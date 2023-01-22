@@ -10,8 +10,9 @@ const submitEmail = submitEmailBtn.addEventListener("click", function (e) {
 
   if (inputEmail.value === "") {
     error.textContent = "Whoops! It looks like you forgot to add your email";
-  } else {
-    !inputEmail.value.includes("@") || inputEmail.length > 0;
+  }
+
+  if (!inputEmail.value.includes("@") && inputEmail.value.length >= 1) {
     error.textContent = "Please provide a valid email address";
   }
 
@@ -19,6 +20,13 @@ const submitEmail = submitEmailBtn.addEventListener("click", function (e) {
   if (mobile.matches) {
     error.classList.add("error-mobile");
     notifyContainer.classList.add("mb");
+  }
+
+  if (
+    !inputEmail.value === "" ||
+    (inputEmail.value.includes("@") && inputEmail.value.length >= 1)
+  ) {
+    notifyContainer.submit();
   }
 
   inputEmail.focus();
