@@ -26,7 +26,6 @@ const submitEmail = submitEmailBtn.addEventListener("click", function (e) {
 
   // Mobile
   if (mobile.matches) {
-    error.classList.add("error-mobile");
     error.classList.add("mb");
     submitEmailBtn.classList.add("mt");
   }
